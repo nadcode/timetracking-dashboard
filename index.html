@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: '#5847eb',
+            work: '#ff8c66',
+            play: '#56c2e6',
+            study: '#ff5c7c',
+            exercise: '#4acf81',
+            social: '#7536d3',
+            selfcare: '#f1c65b',
+            vdarkblue: '#0f1424',
+            darkblue: '#1c1f4a',
+            deblue: '#6f76c8',
+            paleblue: '#bdc1ff'
+          },
+          fontFamily: {
+            'rubik' : ['Rubik', 'sans-serif']
+          },
+          screen: {
+            mobile: '375px'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-vdarkblue">
+
+      <div class="flex flex-row mobile:flex-col text-rubik mx-auto mt-20 text-white max-w-7xl">
+        
+        <div class="mx-2 my-2 font-rubik">
+            <div class="bg-blue h-[340px] w-[260px] rounded-tr-2xl rounded-tl-2xl
+            px-6 py-6">
+                <div class="flex flex-col">
+                    <img src="./images/image-jeremy.png" alt="avatar" class="rounded-full border-2 border-white h-16 w-16">
+                    <div class="mt-4 text-white">
+                        <p class="font-[300] text-base">
+                            Report for
+                        </p>
+                        <h1 class="font-[400] text-[40px]">
+                            Jeremy
+                            Robson
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-darkblue h-[150px] w-[260px] 
+            mobile:justify-around rounded-br-2xl rounded-bl-2xl  px-6 py-6">
+                <button class="text-deblue text-[18px] hover:text-white mt-2">Daily</button>
+                <br>
+                <button class="text-[18px] text-white mt-2">Weekly</button>
+                <br>
+                <button class="text-deblue text-[18px] hover:text-white mt-2">Monthly</button>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap mobile:flex-col font-rubik">
+            
+            <div class="mx-5 my-2">
+                <div class="bg-work h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="images/icon-work.svg" alt="work" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl  hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Work</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            32hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 36hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-5 my-2">
+                <div class="bg-play h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="./images/icon-play.svg" alt="play" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Play</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            10hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 36hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-5 my-2">
+                <div class="bg-study h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="./images/icon-study.svg" alt="study" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Study</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            4hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 7hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-5 my-5">
+                <div class="bg-exercise h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="./images/icon-exercise.svg" alt="exercise" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Exercise</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            4hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 5hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-5 my-5">
+                <div class="bg-social h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="./images/icon-social.svg" alt="work" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Social</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            5hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 10hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-5 my-5">
+                <div class="bg-selfcare h-[60px] w-[260px] rounded-tr-2xl rounded-tl-2xl">
+                    <img src="./images/icon-self-care.svg" alt="work" class="float-right object-cover">
+                </div>
+                <div class="bg-darkblue rounded-br-2xl rounded-bl-2xl hover:bg-deblue h-[170px] w-[260px] text-white  px-5 py-5">
+                    <div class="flex justify-between text-white">
+                        <h2 class="text-[18px] font-[400]">Self Care</h2>
+                        <button class="activity-option">
+                          <img src="./images/icon-ellipsis.svg" alt="3dot">
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <h2 class="text-[50px] font-[400]">
+                            2hrs
+                        </h2>
+                        <p class="text-[12px] font-[300px] text-blue">
+                            Last Week - 2hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+  
+  <div class="attribution mt-8">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">M Danang Asyhari</a>.
+  </div>
+</body>
+</html>
